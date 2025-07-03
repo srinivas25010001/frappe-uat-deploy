@@ -402,6 +402,11 @@ redis-cache:
   auth:
     enabled: false
     sentinel: false
+  image:
+    registry: 10.212.133.28
+    repository: demo/bitnami-redis
+    tag: "7.0.12"
+    pullPolicy: IfNotPresent  
   master:
     containerPorts:
       redis: 6379
@@ -416,6 +421,11 @@ redis-queue:
   auth:
     enabled: false
     sentinel: false
+  image:
+    registry: 10.212.133.28
+    repository: demo/bitnami-redis
+    tag: "7.0.12"
+    pullPolicy: IfNotPresent
   master:
     containerPorts:
       redis: 6379
