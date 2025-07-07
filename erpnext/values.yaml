@@ -12,7 +12,7 @@ dbRootPassword: "Cubuser@222"
 dbRds: false
 
 image:
-  repository: 10.212.133.28/demo/test2
+  repository: 10.212.133.28/demo/test3
   tag: latest
   pullPolicy: IfNotPresent
 
