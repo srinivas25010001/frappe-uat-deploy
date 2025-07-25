@@ -12,8 +12,8 @@ dbRootPassword: "Cubuser@222"
 dbRds: false
 
 image:
-  repository: 10.212.133.28/demo/test2
-  tag: latest
+  repository: 10.212.133.28/demo/jutesmart
+  tag: 1.0.0
   pullPolicy: IfNotPresent
 
 nginx:
@@ -279,14 +279,14 @@ ingress:
     cert-manager.io/cluster-issuer: selfsigned-cluster-issuer
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
   hosts:
-    - host: uat.frappe.local
+    - host: frontend
       paths:
         - path: /
           pathType: Prefix
   tls:
     - secretName: frappe-uat-tls
       hosts:
-        - uat.frappe.local
+        - frontend
 
 jobs:
   volumePermissions:
@@ -315,7 +315,7 @@ jobs:
     # jobName: ""
     enabled: true
     forceCreate: true
-    siteName: "uat.frappe.local"
+    siteName: "frontend"
     adminPassword: "admin"
     adminExistingSecret: ""
     adminExistingSecretKey: "admin"
