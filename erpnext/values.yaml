@@ -279,14 +279,14 @@ ingress:
     cert-manager.io/cluster-issuer: selfsigned-cluster-issuer
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
   hosts:
-    - host: erp.jute.uat
+    - host: frontend
       paths:
         - path: /
           pathType: Prefix
   tls:
     - secretName: frappe-uat-tls
       hosts:
-        - erp.jute.uat
+        - frontend
 
 jobs:
   volumePermissions:
@@ -315,7 +315,7 @@ jobs:
     # jobName: ""
     enabled: true
     forceCreate: true
-    siteName: "erp.jute.uat"
+    siteName: "frontend"
     adminPassword: "admin"
     adminExistingSecret: ""
     adminExistingSecretKey: "admin"
