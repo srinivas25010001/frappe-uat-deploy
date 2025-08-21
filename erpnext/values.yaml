@@ -279,14 +279,14 @@ ingress:
     cert-manager.io/cluster-issuer: selfsigned-cluster-issuer
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
   hosts:
-    - host: uatjutesmart.jutecomm.gov.in
+    - host: test.uat.local
       paths:
         - path: /
           pathType: Prefix
   tls:
     - secretName: frappe-uat-tls
       hosts:
-        - uatjutesmart.jutecomm.gov.in
+        - test.uat.local
 
 jobs:
   volumePermissions:
@@ -315,7 +315,7 @@ jobs:
     # jobName: ""
     enabled: true
     forceCreate: true
-    siteName: "uatjutesmart.jutecomm.gov.in"
+    siteName: "test.uat.local"
     adminPassword: "admin"
     adminExistingSecret: ""
     adminExistingSecretKey: "admin"
