@@ -93,10 +93,6 @@ worker:
     affinity: {}
     args: []
     envVars:
-      - name: REQUESTS_CA_BUNDLE
-        value: /etc/ssl/custom/smsgwsmsgovin-nov25.pem
-      - name: CURL_CA_BUNDLE
-        value: /etc/ssl/custom/smsgwsmsgovin-nov25.pem
     extraVolumes:
       - name: smsgwsmsgovin-nov25
         configMap:
@@ -127,10 +123,6 @@ worker:
       override: false
       probe: {}
     envVars:
-      - name: REQUESTS_CA_BUNDLE
-        value: /etc/ssl/custom/smsgwsmsgovin-nov25.pem
-      - name: CURL_CA_BUNDLE
-        value: /etc/ssl/custom/smsgwsmsgovin-nov25.pem
     extraVolumes:
       - name: smsgwsmsgovin-nov25
         configMap:
@@ -161,10 +153,6 @@ worker:
       override: false
       probe: {}
     envVars:
-      - name: REQUESTS_CA_BUNDLE
-        value: /etc/ssl/custom/smsgwsmsgovin-nov25.pem
-      - name: CURL_CA_BUNDLE
-        value: /etc/ssl/custom/smsgwsmsgovin-nov25.pem
     extraVolumes:
       - name: smsgwsmsgovin-nov25
         configMap:
@@ -195,10 +183,6 @@ worker:
       override: false
       probe: {}
     envVars:
-      - name: REQUESTS_CA_BUNDLE
-        value: /etc/ssl/custom/smsgwsmsgovin-nov25.pem
-      - name: CURL_CA_BUNDLE
-        value: /etc/ssl/custom/smsgwsmsgovin-nov25.pem
     extraVolumes:
       - name: smsgwsmsgovin-nov25
         configMap:
@@ -223,10 +207,6 @@ worker:
       override: false
       probe: {}
     envVars:
-      - name: REQUESTS_CA_BUNDLE
-        value: /etc/ssl/custom/smsgwsmsgovin-nov25.pem
-      - name: CURL_CA_BUNDLE
-        value: /etc/ssl/custom/smsgwsmsgovin-nov25.pem
     extraVolumes:
       - name: smsgwsmsgovin-nov25
         configMap:
