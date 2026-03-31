@@ -355,7 +355,7 @@ jobs:
     # jobName: ""
     enabled: true
     forceCreate: true
-    siteName: "frontend"
+    siteName: "uatjutesmart.jutecomm.gov.in"
     adminPassword: "admin"
     adminExistingSecret: ""
     adminExistingSecretKey: "admin"
@@ -363,6 +363,7 @@ jobs:
     - "erpnext"
     - "dev_jute_smart"
     dbType: "mariadb"
+    dbName: "JuteSmartDB"
     backoffLimit: 0
     resources: {}
     nodeSelector: {}
@@ -446,7 +447,7 @@ redis-cache:
     registry: 10.212.133.28
     repository: demo/bitnami-redis
     tag: "7.0.12"
-    pullPolicy: IfNotPresent  
+    pullPolicy: IfNotPresent
   master:
     containerPorts:
       redis: 6379
