@@ -12,7 +12,7 @@ dbRootPassword: "Cubuser@222"
 dbRds: false
 
 image:
-  repository: 10.212.133.28/demo/jutesmart
+  repository: 10.212.133.28/cicd/jutesmart
   tag: v1.2.4
   pullPolicy: Always
 
