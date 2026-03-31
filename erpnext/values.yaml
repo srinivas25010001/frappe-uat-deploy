@@ -13,8 +13,8 @@ dbRds: false
 
 image:
   repository: 10.212.133.28/demo/jutesmart
-  tag: uat-1
-  pullPolicy: IfNotPresent
+  tag: v1.2.4
+  pullPolicy: Always
 
 nginx:
   replicaCount: 1
