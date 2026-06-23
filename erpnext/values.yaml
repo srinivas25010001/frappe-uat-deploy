@@ -395,7 +395,7 @@ jobs:
   migrate:
     # jobName: ""
     enabled: true
-    siteName: "dev.frappe.local"
+    siteName: "uatjutesmart.jutecomm.gov.in"
     skipFailing: false
     backoffLimit: 0
     resources: {}
