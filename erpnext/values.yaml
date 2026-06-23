@@ -8,7 +8,7 @@ dbPort: 3306
 dbRootUser: "root"
 dbRootPassword: "Cubuser@222"
 #dbRootPasswordSecret: mariadb-root-password
-#dbRootPasswordKey: password
+#dbRootPasswordKey: password latest
 dbRds: false
 
 image:
@@ -353,7 +353,7 @@ jobs:
 
   createSite:
     # jobName: ""
-    enabled: true
+    enabled: false
     forceCreate: true
     siteName: "uatjutesmart.jutecomm.gov.in"
     adminPassword: "admin"
@@ -394,7 +394,7 @@ jobs:
 
   migrate:
     # jobName: ""
-    enabled: false
+    enabled: true
     siteName: "dev.frappe.local"
     skipFailing: false
     backoffLimit: 0
