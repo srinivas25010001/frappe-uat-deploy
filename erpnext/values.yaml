@@ -13,7 +13,7 @@ dbRds: false
 
 image:
   repository: 10.212.133.28/cicd/jutesmart
-  tag: v1.2.5
+  tag: v1.2.6
   pullPolicy: Always
 
 nginx:
@@ -374,7 +374,7 @@ jobs:
     # jobName: ""
     enabled: false
     forced: false
-    siteName: "erp.cluster.local"
+    siteName: "uatjutesmart.jutecomm.gov.in"
     backoffLimit: 0
     resources: {}
     nodeSelector: {}
@@ -384,7 +384,7 @@ jobs:
   backup:
     # jobName: ""
     enabled: false
-    siteName: "erp.cluster.local"
+    siteName: "uatjutesmart.jutecomm.gov.in"
     withFiles: true
     backoffLimit: 0
     resources: {}
