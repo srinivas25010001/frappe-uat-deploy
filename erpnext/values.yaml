@@ -353,7 +353,7 @@ jobs:
 
   createSite:
     # jobName: ""
-    enabled: false
+    enabled: true
     forceCreate: true
     siteName: "uatjutesmart.jutecomm.gov.in"
     adminPassword: "admin"
@@ -394,7 +394,7 @@ jobs:
 
   migrate:
     # jobName: ""
-    enabled: true
+    enabled: false
     siteName: "uatjutesmart.jutecomm.gov.in"
     skipFailing: false
     backoffLimit: 0
