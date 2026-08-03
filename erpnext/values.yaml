@@ -445,8 +445,8 @@ redis-cache:
     sentinel: false
   image:
     registry: 10.212.133.28
-    repository: demo/bitnami-redis
-    tag: "7.0.12"
+    repository: library/redis
+    tag: "latest"
     pullPolicy: IfNotPresent
   master:
     containerPorts:
@@ -464,8 +464,8 @@ redis-queue:
     sentinel: false
   image:
     registry: 10.212.133.28
-    repository: demo/bitnami-redis
-    tag: "7.0.12"
+    repository: library/redis
+    tag: "latest"
     pullPolicy: IfNotPresent
   master:
     containerPorts:
